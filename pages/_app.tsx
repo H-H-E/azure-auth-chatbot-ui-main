@@ -1,7 +1,7 @@
 import { SessionProvider } from 'next-auth/react';
 import { Toaster } from 'react-hot-toast';
 import { QueryClient, QueryClientProvider } from 'react-query';
-
+import { Analytics } from '@vercel/analytics/react';
 import { Session } from 'next-auth';
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
@@ -20,8 +20,11 @@ function App({ Component, pageProps }: AppProps<{ session: Session }>) {
         <Toaster />
         <QueryClientProvider client={queryClient}>
           <Component {...pageProps} />
+          <Analytics />
         </QueryClientProvider>
+     
       </div>
+
     </SessionProvider>
   );
 }

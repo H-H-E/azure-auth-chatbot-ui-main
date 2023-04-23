@@ -14,7 +14,9 @@
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.2",
     "@tabler/icons-react": "^2.9.0",
+    "@vercel/analytics": "^0.1.8",
     "chalk": "^5.2.0",
+    "docker": "^1.0.0",
     "eventsource-parser": "^1.0.0",
     "i18next": "^22.4.14",
     "langchain": "^0.0.59",
@@ -35,6 +37,7 @@
     "remark-math": "^5.1.1",
     "sass": "^1.62.0",
     "uuid": "^9.0.0",
+    "vercel": "^28.20.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
