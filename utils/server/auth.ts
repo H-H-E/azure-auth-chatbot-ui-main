@@ -30,3 +30,6 @@ export const getUserHash = async (
   const hash = crypto.createHash('sha256').update(email).digest('hex');
   return hash;
 };
+//Explain the above 
+// The above code is used to ensure that the user is logged in and to get the user's hash.
+// The ensureHasValidSession function is used to ensure that the user is logged in.

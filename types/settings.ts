@@ -6,4 +6,5 @@ export const SettingsSchema = z.object({
   defaultTemperature: z.number(),
 });
 
+
 export type Settings = z.infer<typeof SettingsSchema>;
