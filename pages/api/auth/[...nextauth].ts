@@ -59,7 +59,8 @@ if (process.env.NEXTAUTH_ENABLED === 'false') {
 
 export const authOptions: NextAuthOptions = {
   providers: providers,
-  session: { strategy: 'jwt' },
+    adapter: MongoDBAdapter(clientPromise),
+
   pages,
 };
 
