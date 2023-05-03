@@ -4,6 +4,8 @@ import GithubProvider from 'next-auth/providers/github';
 import GoogleProvider from 'next-auth/providers/google';
 import AzureADProvider from "next-auth/providers/azure-ad";
 import { MongoDBAdapter } from '@next-auth/mongodb-adapter';
+import clientPromise from "../../../lib/mongodb"
+
 import { MongoClient } from 'mongodb'
 
 
